@@ -39,7 +39,7 @@ wil ik nieuwe medewerkers kunnen toevoegen/aanpassen
 zodat hun functie kunnen uitvoeren met de bijpassend verantwoordelijkheden
 
 
-Niet functionele eisen
+Niet functionele eisen:
 1. Makkelijk in gebruik
 2. Backup elke dag
 3. snel werken op bestaande computers
@@ -49,11 +49,11 @@ Niet functionele eisen
 
 
 Product class(Abstract)
-- artikel code
-- naam
-- inkoop prijs
-- verkoop prijs
-- stock: int
+- productCode : int
+- description : String
+- purchasePrice : double
+- salesPrice : double
+- stock : int
 - numberSold : int
 - vesaStandard : List<string>
 - WarehouseLocation: String
@@ -78,6 +78,6 @@ CiModule
 
 
 Users
-- ID
-- Rol
-- wachtwoord
+- ID: String
+- Role : char
+- password : ??
